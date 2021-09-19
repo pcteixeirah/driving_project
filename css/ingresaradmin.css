@@ -7,7 +7,7 @@
 	font-family: 'Poppins', sans-serif;
 }
 body{
-	background-image: url("../img/esc.jpg");
+	background-image: url("../img/esc2.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	font-weight: 300;
@@ -55,10 +55,11 @@ header{
 }
 .nav ol li{
 	margin: 1em;
+	padding: 1.2em 0 0.25em 0;
 }
 .nav ol li a{
 	text-decoration: none;
-	padding: 1.2em 1.2em 1.2em 1.2em;
+	padding: 1.2em 1.2em 1em 1.2em;
 	border-radius: 10px 10px 0 0;
 	color: rgb(39, 39, 39);
 	transition: all .4s;
@@ -200,7 +201,7 @@ header .btn::before{
 	color: #fff; 
 }
 .link:hover{
-	color: #12f8ad; 
+	color: #2196f3; 
 }
 .section p{
 	font-weight: 500; 
@@ -249,7 +250,7 @@ h6 span{
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    color: #12f8ad;
+    color: #2196f3;
     background-color: #2a2b38;
     font-family: 'unicons';
     content: '\eb4f';
@@ -349,7 +350,7 @@ h6 span{
     font-size: 24px;
     line-height: 48px;
     text-align: left;
-    color: #12f8ad;
+    color: #2196f3;
     transition: all 200ms linear;
 }
 .form-group input:-ms-input-placeholder  {
@@ -388,6 +389,7 @@ h6 span{
     opacity: 0;
     transition: all 200ms linear;
 }
+/*2.SUBMIT BUTTON*/
 a.btn{  
     border-radius: 4px;
     height: 44px;
@@ -403,19 +405,19 @@ a.btn{
     -ms-flex-pack: center;
     text-align: center;
     border: none;
-    background-color: #12f8ad;
+    background-color: #2196f3;
     color: #fff;
-    box-shadow: 0 8px 24px 0 rgba(18, 248, 173,.2);
+    box-shadow: 0 8px 24px 0 rgba(10, 21, 121, 0.2);
 }
 a.btn:active,
 a.btn:focus{  
   background-color: #fff;
-  color: #12f8ad;
+  color: #2196f3;
   box-shadow: 0 8px 24px 0 rgba(255,255,255,.2);
 }
 a.btn:hover{  
   background-color: #fff;
-  color:#12f8ad;
+  color:#2196f3;
   box-shadow: 0 8px 24px 0 rgba(255,255,255,.2);
 }
 .section .logo {
