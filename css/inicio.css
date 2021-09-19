@@ -1,0 +1,203 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Titillium Web', sans-serif;
+	background: #000 url("../img/Conducción.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.contenedor{
+	margin: auto;
+	width: 90%;
+	max-width: 1100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+header {
+	width: 100%;
+	padding: 30px 20px;
+	background: rgb(58,145,227,.3);
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*MENU DESPLEGABLE*/
+
+.navegacion{
+	width: 270px;
+	background-color: #fff;
+	border-radius: 10px; 
+}
+.navegacion ul{
+	list-style: none;
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: rgb(58,145,227);
+	font-size: 22px;
+	text-decoration: none;
+}
+.menu li a:hover{
+	background-color: #fff;
+	color: rgb(58,145,227);
+	transition: all .3s;
+}
+
+/*SUBMENU*/
+
+.submenu{
+	position: absolute;
+	width: 100%;
+	background-color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition:opacity 1.5s;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: rgb(58,145,227);
+	text-decoration: none;
+}
+.submenu li a:hover{
+	color: #fff;
+	background-color: rgb(58,145,227);
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+/*cierro menu */
+.sihpe{
+	border-radius: 10px;
+}
+.atlogo{
+	border-radius: 60px;
+}
+.main{
+	background: #fff;
+	padding: 20px;
+	width: 65%;
+}
+.main article .texto{
+	margin-bottom: 20px;
+}
+.main article .texto img{
+	vertical-align: top;
+	width: 100%;
+}
+.main article p{
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 27px;
+}
+aside{
+	width: 35%;
+	background-color: #4264a2;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+aside .uno{
+	font-size: 20px;
+	text-align:left;
+	color: #fff;
+	padding: 40px 20px;
+	background: #537dca;
+	margin: auto;
+}
+aside ul{
+	padding: 22px;
+}
+footer{
+	margin-top: 20px;
+	background: rgb(58,145,227,.3);
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	vertical-align: middle;
+}
+
+.autor{
+	margin-top: 20px;
+}
+.redes{
+	margin-top: 20px;
+}
+
+footer .redes a{
+	color: #fff;
+	text-decoration: underline;
+	margin-left: 20px;
+}
+footer .redes a:hover{
+	text-decoration:none;
+}
+@media screen and (max-width: 800px){
+	.main{
+		width: 100%;
+	}
+	aside {
+		width: 100%;
+		flex-direction: row;
+	}
+	aside .uno{
+		width: 40%;
+	}
+}
+@media screen and (max-width: 600px){
+	header{
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	header .menu{
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 20px;
+	}
+	header .logo{
+		margin-bottom: 20px;
+	}
+	header .menu a{
+		margin: 0 20px;
+	}
+	footer{
+		flex-direction: row;
+		text-align: left;
+	}
+	footer .redes{
+		order: 2;
+	}
+	footer .autor{
+		order: 1;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 400px){
+	aside{
+		display: none;
+	}
+}
