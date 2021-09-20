@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="RV.css">
+    <title>RetirarVehiculo</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Reservar vehiculo</h2><br>
+        <form class="formulario" method="post" action="">
+            <label for="tipoV">Tipo de vehiculo: </label>
+            <select class="form-select" aria-label="Default select example" id="tipoV">
+                <option value="Automovil_Manual">Automovil - Manual</option>
+                <option value="Automovil_Automatico">Automovil - Automatico</option>
+                <option value="Camioneta_Automatico">Camioneta - Automatica</option>
+                <option value="Camioneta_Manual">Camioneta - Manual</option>
+                <option value="Campero">Campero</option>
+                <option value="Electrico">Electrico</option>
+            </select><br>
+            <label for="diaI">Fecha de inicio: </label>
+            <input class="in" type="datetime-local" id="diaI"><br>
+            <label for="diaF">Fecha final: </label>
+            <input class="in" type="datetime-local" id="diaF"><br>
+            <label for="nombre">Nombre del alumno: </label>
+            <input type="text" id="nombre" class="in"><br>
+            <label for="ruta">Ruta: </label>
+            <input class="in" type="text" id="ruta"><br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Acepto los terminos y condiciones</label>
+            </div><br>
+            <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+        </form>
+    </div>
+</body>
+</html>
