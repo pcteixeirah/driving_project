@@ -299,6 +299,7 @@ h6 span{
 }
 .card-back {
     transform: rotateY(180deg);
+	height: 120%;
 }
 .checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
     transform: rotateY(180deg);
@@ -312,6 +313,13 @@ h6 span{
     transform: translate3d(0, -50%, 35px) perspective(100px);
     z-index: 20;
     display: block;
+	backface-visibility: hidden;
+}
+/*1.FORMULARIO*/
+.formulario{
+	position: relative;
+	text-align: start;
+	color: #c4c3ca;
 }
 .form-group{ 
     position: relative;
