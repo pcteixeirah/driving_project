@@ -105,54 +105,7 @@ header .btn::before{
 	font-weight: 700;
 	font-size: 2em;
 }
-/*2. SUBMENU*/
-.submenu{
-	position: absolute;
-	width: 100%;
-	background-color: white;
-	visibility: hidden;
-	opacity: 0;
-	transition:opacity 1.5s;
-}
-.submenu li{
-	margin: 1em;
-}
-.submenu li a{
-	text-decoration: none;
-	padding: 15px;
-	display: block;
-	border-radius: 10px 10px 0 0;
-	color: rgb(39, 39, 39);
-	transition: all .4s;
-	position: relative;
-	z-index: 1;
-}
-.submenu li a::before{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 41px;
-	border-radius: 10px 10px 0 0;
-	background: #853333;
-	transform-origin: bottom;
-	background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-	transform: scaleY(0.05);
-	z-index: -1;
-	transition: all .4s;
-}
-.submenu li a:hover::before{
-	transform: scaleY(1.1);
-}
-.submenuli a:hover{
-	color: white;
-}
-.nav ol li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
-}
-/*3. MEDIA QUERIES (RESPONSIVE BREAKPOINTS)*/
+/*2. MEDIA QUERIES (RESPONSIVE BREAKPOINTS)*/
 @media (max-width: 1000px){
 	.btn{
 		display: flex;
@@ -442,12 +395,3 @@ a.btn:hover{
 	display: block;
 }
 /*============================================================================*/
-
-.autor{
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	color: #000;
-	background-color: rgb(255,255,255,.3);
-	border-radius: 5px;
-}
