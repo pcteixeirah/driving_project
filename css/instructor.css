@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background: #000 url("../img/conduccion.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	overflow-x: hidden;
+}
+
+/* .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    padding-top: 15px;
+    margin-top: 20px;
+    width: 400px;
+    height: 600px;
+    background-color:rgb(135, 206, 250, 0.7);
+    border-style: solid;
+    border-color:rgb(40, 110, 151);
+    border-radius: 10px;
+	transition: all ease 700ms;
+    color: lawngreen;
+} */
+
+/* .container:hover{
+	width: 500px;
+	border-color: black;
+} */
+
+/* .container:hover h2{
+	color: black;
+} */
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* .container h2{
+	color: rgb(33, 73, 119);
+} */
+
+header{
+	width: 100%;
+	height: 50px;
+	background: #f8f8f8;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	flex-direction: row;
+}
+.autologo{
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	margin: 1px;
+	padding: 1px;
+	border-radius: 10px;
+}
+
+.Logo{
+	color: rgb(44, 44, 44);
+	font-size: 1.5em;
+}
+
+/*1. MENU DESPLEGABLE*/
+.contain{
+	display: flex;
+	padding: 1.2em 0 0 2em;
+}
+.nav{
+	display: flex;
+	align-items: center;
+}
+.nav ol{
+	display: flex;
+	list-style: none;
+}
+.nav ol li{
+	margin: 1em;
+	padding: 1.2em 0 0.25em 0;
+}
+.nav ol li a{
+	text-decoration: none;
+	padding: 1.2em 1.2em 1em 1.2em;
+	border-radius: 10px 10px 0 0;
+	color: rgb(39, 39, 39);
+	transition: all .4s;
+	position: relative;
+	z-index: 1;
+}
+.nav ol li a::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 41px;
+	border-radius: 10px 10px 0 0;
+	background: #853333;
+	transform-origin: bottom;
+	background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+	transform: scaleY(0.05);
+	z-index: -1;
+	transition: all .4s;
+}
+.nav ol li a:hover::before{
+	transform: scaleY(1.1);
+}
+.nav ol li a:hover{
+	color: white;
+}
+header .btn{
+	position: relative;
+	width: 25px;
+	height: 25px;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	display: none;
+}
+header .btn::before{
+	content: '\f0c9';
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+	font-size: 2em;
+}
+
+/*PESTAÑAS*/
+
+/* header h1{
+	display: inline;
+	font-size: 30px;
+	color: rgb(58,145,227);
+}
+header .menu a{
+	color: rgb(58,145,227);
+	text-decoration: none;
+	margin-right: 40px;
+	font-size: 18px;}
+header .menu a:hover{
+	text-decoration: underline;
+
+} */
+
+
+.contenedor {
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+
+.cabecera {
+	background-color: rgb(255, 255, 255, 0.7);
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 10px;
+	border: 2px solid;
+	position: relative;
+	color:  #2a2b38;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transform: translateY(2px);
+	z-index: 2;
+}
+
+.pestana {
+	position: absolute;
+	border-top: 3px solid #2a2b38;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 1s, opacity 1s;
+}
+		
+.p-activa {
+	visibility: visible;
+	opacity: 1;
+}
+.c-activa {
+	background-color: white;
+	border-bottom-color: white;
+}
+
+p{
+	text-align: justify;
+	padding: 10px;
+}
+
+.sihpe{
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 60px;
+	position: absolute;
+	bottom: 00px;
+	right: 0px;
+}
+
+.autor{
+	position: absolute;
+	font-size: 15px;
+	bottom: 0px;
+	right: 80px;
+	color: rgb(58,145,227);
+	background-color: rgb(255,255,255,.3);
+	border-radius: 10px;
+}
+
+/*FORM*/
+/*===================ANIMATED 3D CSS EFFECT LOGIN/SIGNUP FORM (@coding.beast)===================*/
+h4{
+	font-weight: 600;
+	color: #fff; 
+}
+
+.card-3d-wrap {
+    position: relative;
+    width: 440px;
+    max-width: 100%;
+    height: 770px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    margin-top: 40px;
+}
+.card-3d-wrapper {
+    width: 100%;
+    height: 100%;
+    position:absolute;    
+    top: 0;
+    left: 0;  
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all 600ms ease-out; 
+}
+
+.card-front{
+    width: 100%;
+    height: 100%;
+    background-color: #2a2b38;
+    position: absolute;
+    border-radius: 6px;
+    left: 0;
+    top: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.center-wrap{
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 35px) perspective(100px);
+    z-index: 20;
+    display: block;
+	backface-visibility: hidden;
+}
+/*1.FORMULARIO*/
+.formulario{
+	position: relative;
+	text-align: start;
+	color: #c4c3ca;
+}
+.form-group{ 
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.form-style {
+    padding: 13px 20px;
+    padding-left: 55px;
+    height: 48px;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #c4c3ca;
+    background-color: #1f2029;
+    border: none;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+.form-style:focus,
+.form-style:active {
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+.input-icon {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    color: #2196f3;
+    transition: all 200ms linear;
+}
+.form-group input:-ms-input-placeholder  {
+    color: #c4c3ca;
+    opacity: 0.7;
+    transition: all 200ms linear;
+}
+.form-group input::-moz-placeholder  {
+    color: #c4c3ca;
+    opacity: 0.7;
+    transition: all 200ms linear;
+}
+.form-group input:-moz-placeholder  {
+    color: #c4c3ca;
+    opacity: 0.7;
+    transition: all 200ms linear;
+}
+.form-group input::-webkit-input-placeholder  {
+    color: #c4c3ca;
+    opacity: 0.7;
+    transition: all 200ms linear;
+}
+.form-group input:focus:-ms-input-placeholder  {
+    opacity: 0;
+    transition: all 200ms linear;
+}
+.form-group input:focus::-moz-placeholder  {
+    opacity: 0;
+    transition: all 200ms linear;
+}
+.form-group input:focus:-moz-placeholder  {
+    opacity: 0;
+    transition: all 200ms linear;
+}
+.form-group input:focus::-webkit-input-placeholder  {
+    opacity: 0;
+    transition: all 200ms linear;
+}
+/*2.SUBMIT BUTTON*/
+button{
+	align-self: center;
+	width: 200px;
+}
+
+.btn{  
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    border: none;
+    background-color: #2196f3;
+    color: #fff;
+    box-shadow: 0 8px 24px 0 rgba(10, 21, 121, 0.2);
+}
+.btn:active,
+.btn:focus{  
+  background-color: #fff;
+  color: #2196f3;
+  box-shadow: 0 8px 24px 0 rgba(255,255,255,.2);
+}
+.btn:hover{  
+  background-color: #fff;
+  color:#2196f3;
+  box-shadow: 0 8px 24px 0 rgba(255,255,255,.2);
+}
+.section .logo {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	display: block;
+	z-index: 100;
+	transition: all 250ms linear;
+}
+.section .logo img {
+	height: 26px;
+	width: auto;
+	display: block;
+}
+/*============================================================================*/

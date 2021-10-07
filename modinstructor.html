@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Instructor - Autocarrera</title>
+		<meta name="description" content="">
+		<meta name="author" content="satur">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/cambiarpestana.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="img/atcarreralogo.ico">
+		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+		<link rel="stylesheet" type="text/css" href="css/instructor.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="nav">
+				<img src="img/atcarreralogo1.png" class="autologo">
+				<div class="contain">
+					<p class="Logo">CEA Autocarrera</p>
+					<input type="checkbox" name="" class="btn"/>
+				</div>
+			</div>
+			<div class="nav">
+				<ol>
+					<li><a href="inicio.html">Inicio</a></li>
+					<li><a href="#">Cerrar sesion</a></li>
+					<li><a href="#">Contactenos</a></li>
+				</ol>
+			</div>
+		</header>
+		<div class="contenedor">
+			<a href="#" class="cabecera" onclick="mostrarPestana(0);">Inicio</a>
+			<div class="pestana">
+				<p>
+					aqui va el inicio
+				</p>
+			</div>
+			<a href="#" class="cabecera c-activa" onclick="mostrarPestana(1);">Reservar vehiculo</a>
+			<div class="pestana p-activa">
+				<!-- <div class="container"> -->
+
+					<div class="card-3d-wrap mx-auto">
+						<div class="card-3d-wrapper">
+							<div class="card-front">
+								<div class="center-wrap">
+									<div class="section text-center">
+										<h4 class="mb-4 pb-3">Reservar vehiculo</h4>
+										<form class="formulario" method="post" action="">
+											<label for="validationDefault04">Tipo de vehiculo: </label>
+											<div class="form-group mt-2">
+												<select class="form-style" aria-label="Default select example" id="validationDefault04" required>
+													<option selected disabled value="">Open this select menu</option>
+													<option value="Automovil_Manual">Automovil - Manual</option>
+													<option value="Automovil_Automatico">Automovil - Automatico</option>
+													<option value="Camioneta_Automatico">Camioneta - Automatica</option>
+													<option value="Camioneta_Manual">Camioneta - Manual</option>
+													<option value="Campero">Campero</option>
+													<option value="Electrico">Electrico</option>
+												</select>
+												<i class="input-icon uil uil-car-sideview"></i>
+											</div><br>
+											<label for="diaI">Fecha de inicio: </label>
+											<div class="form-group mt-2">
+												<input class="form-style" type="datetime-local" id="diaI" onclick="validate_dateI();" required>
+												<i class="input-icon uil uil-calendar-alt"></i>
+											</div><br>
+											<label for="diaF">Fecha final: </label>
+											<div class="form-group mt-2">
+												<input class="form-style" type="datetime-local" id="diaF" onclick="validate_dateF();" required>
+												<i class="input-icon uil uil-calendar-alt"></i><br>
+											</div><br>
+											<label for="nombre">Nombre del alumno: </label>
+											<div class="form-group">
+												<input type="text" id="nombre" class="form-style" required>
+												<i class="input-icon uil uil-user"></i><br>
+											</div><br>
+											<label for="ruta">Ruta: </label>
+											<div class="form-group">
+												<input class="form-style" type="text" id="ruta" required>
+												<i class="input-icon uil uil-location-arrow"></i>
+											</div><br>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+												<label class="form-check-label" for="flexCheckDefault">Acepto los terminos y condiciones</label>
+											</div>
+											<button class="btn mt-4" type="submit">Enviar solicitud</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<!-- </div> -->
+			</div>
+			<a href="#" class="cabecera" onclick="mostrarPestana(2);">Consultar mensajes</a>
+			<div class="pestana">
+				<p>
+					aqui consulta sus mensajes
+				</p>
+			</div>
+			<a href="#" class="cabecera" onclick="mostrarPestana(3);">Editar mis datos</a>
+			<div class="pestana">
+				<p>
+					aqui editaria los datos
+				</p></div>
+				<a href="#" class="cabecera" onclick="mostrarPestana(4);">Comenzar una clase</a>
+				<div class="pestana">
+					<p>
+					aqui habra una interfaz que dara inicio al ciclo de una clase y que al terminar se sumara a las horas realizadas del aprendiz
+				</p>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>
